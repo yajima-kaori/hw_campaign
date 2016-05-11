@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+div
+{
+  text-align: center;
+  margin: 40px auto;
+}
+
+div p
+{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+span
+{
+  font-size: 52px;
+  color: #de2424;
+  font-weight: 700;
+}

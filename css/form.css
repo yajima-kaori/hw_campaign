@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/*sum 640
+header 100
+form 260
+kiyaku 180
+540
+agree 30
+submit 53*/
+
+
+table
+{
+  width: 840px;
+  height: 240px;
+  margin-top:25px;
+  margin-bottom:25px;
+}
+
+table tr
+{
+border: 1px solid #512c17;
+}
+
+table tr td
+{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  font-weight: 600;
+}
+
+table tr td:nth-last-of-type(2)
+{
+  background-color: #eae1dc;
+
+}
+
+.inputStyle
+{
+  width: 80%;
+  height: 24px;
+}
+
+
+.inputStyle_postal
+{
+  width: 20%;
+  height: 24px;
+}
+
+
+.kiyaku
+{
+  height: 100px;
+  background-color: #eeeeee;
+  text-align: center;
+
+}
+
+.kiyaku p
+{
+  font-size: 80%;
+  padding-top:20px;
+}
+
+.agree
+{
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.agree input
+{
+  font-size: 90%;
+}
+
+.submit
+{
+  text-align: center;
+}
+
+.submit input
+{
+  border: none;
+  font-size: 24px;
+  background-color: #de2424;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px 100px;
+}
+
+span
+{
+  font-size: 16px;
+  color: #de2424;
+  font-weight: 600;
+
+}
