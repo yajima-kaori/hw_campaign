@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+
+
+#background
+{
+  background-image: url("../img/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner
+{
+  width: 840px;
+  height: 420px;
+  font-size: 82px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.go
+{
+  width: 840px;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+}
+
+.go a
+{
+  background-color: #de2424;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 20px 50px;
+}
+

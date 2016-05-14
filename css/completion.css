@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+div
+{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 20px auto;
+}
