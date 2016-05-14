@@ -3,7 +3,24 @@
 div
 {
   text-align: center;
+<<<<<<< HEAD
   font-size: 24px;
   font-weight: 600;
   margin: 20px auto;
+=======
+  margin: 40px auto;
+}
+
+div p
+{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+span
+{
+  font-size: 52px;
+  color: #de2424;
+  font-weight: 700;
+>>>>>>> origin/master
 }

@@ -13,8 +13,12 @@ create table users(
   address varchar(100),
   agree char (2),
   password int(7)
+<<<<<<< HEAD
 );
 
 create table error_time(
   id int(42),
   created_at varchar(32));
+=======
+);
+>>>>>>> origin/master

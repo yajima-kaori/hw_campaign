@@ -11,6 +11,7 @@ if(!empty($_SESSION['id']))
   exit;
 }
 
+<<<<<<< HEAD
 
 if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
@@ -120,6 +121,36 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
    {
      $errors['message'] = '1分間ログインできません';
    }
+=======
+if($_SERVER['REQUEST_METHOD'] == 'POST')
+{
+ $email = $_POST['email'];
+ $password = $_POST['password'];
+
+ $dbh = connectDatabase();
+ $sql = "select * from users where email = :email and password = :password";
+ $stmt = $dbh->prepare($sql);
+ $stmt->bindParam(":email",$email);
+ $stmt->bindParam(":password",$password);
+ $stmt->execute();
+
+ $row = $stmt->fetch();
+
+ // var_dump($row);
+
+ $errors = array();
+
+  if($row)
+  {
+    $_SESSION['id'] = $row['id'];
+    header('Location: lottery.php');
+    exit;
+  }
+  else
+  {
+    $errors['message'] ='ログインに失敗しました｡';
+  }
+>>>>>>> origin/master
 
 
 }
@@ -142,6 +173,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
           <table>
           <tr>
             <td>メールアドレス</td>
+<<<<<<< HEAD
             <td><input type="text" name="email" class="inputStyle">
             <?php echo '<br>' . h($errors['email']) ?>
             </td>
@@ -151,6 +183,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
             <td><input type="text" name="password" class="inputStyle">
                 <?php echo '<br>' . h($errors['password']) ?>
             </td>
+=======
+            <td><input type="text" name="email" class="inputStyle"></td>
+          </tr>
+          <tr>
+            <td>結果確認用パスワード</td>
+            <td><input type="text" name="password" class="inputStyle"></td>
+>>>>>>> origin/master
          </tr>
          </table>
         <div class="submit">

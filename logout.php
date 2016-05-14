@@ -11,6 +11,10 @@ if(isset($_COOKIE[session_name()]))
 
 session_destroy();
 
+<<<<<<< HEAD
 header('Location:login.php');
+=======
+header('Location: top.php');
+>>>>>>> origin/master
 
 ?>
